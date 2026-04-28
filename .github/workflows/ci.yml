@@ -96,7 +96,7 @@ jobs:
       - name: Deploy to Amazon ECS
         run: |
           aws ecs update-service \
-            --cluster user-api-cluster \
-            --service user-api-service \
+            --cluster my-cluster \
+            --service my-app-service \
             --force-new-deployment \
             --region eu-west-1
